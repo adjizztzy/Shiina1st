@@ -1,0 +1,88 @@
+/* style.css */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  overflow: hidden;
+}
+.container, .main, .loading {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.center-content {
+  text-align: center;
+}
+.avatar {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin-bottom: 20px;
+}
+.title {
+  font-size: 32px;
+  margin-bottom: 5px;
+}
+.subtitle {
+  opacity: 0.8;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.start-button {
+  padding: 12px 30px;
+  font-size: 18px;
+  background-color: #fff;
+  color: #2c5364;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.hidden {
+  display: none;
+}
+.loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+#particles-js {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.profile-card {
+  background: rgba(0,0,0,0.6);
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+  z-index: 1;
+}
+.button-group .btn {
+  display: block;
+  margin: 10px auto;
+  background: white;
+  color: #2c5364;
+  text-decoration: none;
+  padding: 10px 24px;
+  border-radius: 30px;
+  font-weight: bold;
+  width: 200px;
+}
+.quote {
+  font-style: italic;
+  margin-top: 20px;
+  opacity: 0.8;
+  }
